@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            /* border:  2px solid red; */
+            grid-template-columns:20% 60% 20%;
+            grid-template-rows: 80px 180px 80px;
+            gap: 10px;
+            margin: 10px;
+        }
+        .box{
+            border: 5px solid red;
+            padding: 12px;
+        
+            background-color: gray;
+            text-align: center;
+            
+
+        }
+        #box-1{
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-end: 4;
+
+        }
+        #box-2{
+        grid-column-start: 2/3;
+        grid-column-end: 2/3;
+
+        }
+        #box-3{
+            grid-column-start: 2;
+            grid-column-end:3 ;
+            grid-row-start: 2/4;
+        }
+        #box-4{
+            grid-column-start: 3/4;
+            grid-column-end:2/3 ;
+        }
+        #box-5{
+            grid-column-end: 4;
+            grid-column-start: 1;
+            padding-bottom: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1"><h2>Header</h2></div>
+        <div class="box" id="box-2"><h2>left content</h2></div>
+        <div class="box" id="box-3"><h2>middle content</h2></div>
+        <div class="box" id="box-4"><h2>right content</h2></div>
+        <div class="box" id="box-5"><h2>Footer</h2></div>
+    </div>
+</body>
+</html>

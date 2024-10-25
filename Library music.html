@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Library</title>
+    <link rel="stylesheet" href="Library music.css">
+</head>
+<body>
+    <header>
+        <h1>My Music Library</h1>
+    </header>
+
+    <section class="library">
+        <h2>Your Library</h2>
+        <div class="song-list">
+            <!-- Song Item -->
+            <div class="song">
+                <img src="https://i.ytimg.com/vi/ysj1uU9E7og/maxresdefault.jpg" alt="Song Cover" class="song-cover">
+                <div class="song-info">
+                    <h3>Aaj ki Raat</h3>
+                    <p>Madhubanti Bagchi</p>
+                </div>
+                <div class="song-controls">
+                    <button class="play-btn" onclick="playSong('song1')">Play</button>
+                    <button class="pause-btn" onclick="pauseSong('song1')">Pause</button>
+                    <button class="remove-btn" onclick="removeSong(this)">Remove</button>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.csTK8Z2W0Y1Ga6dnT0LChQHaEK&pid=Api&P=0&h=180" alt="Song Cover" class="song-cover">
+                <div class="song-info">
+                    <h3>Humsafar</h3>
+                    <p>Mansheel Gujral</p>
+                </div>
+                <div class="song-controls">
+                    <button class="play-btn" onclick="playSong('song2')">Play</button>
+                    <button class="pause-btn" onclick="pauseSong('song2')">Pause</button>
+                    <button class="remove-btn" onclick="removeSong(this)">Remove</button>
+                </div>
+            </div>
+            <!-- Add more songs here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Music Streamer. </p>
+    </footer>
+
+    <script src="Library music.js"></script>
+</body>
+</html>

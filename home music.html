@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Music Stream</title>
+    <link rel="stylesheet" href="home music.css">
+</head>
+<body>
+
+<header>
+    <h1>Music Stream</h1>
+    <nav>
+        <a href="home music.html">Home</a>
+        <a href="About music.html">About</a>
+        <a href="Library music.html">Music Library</a>
+        <a href="Contact music.html">Contact</a>
+        <a href="Login music.html">Login</a>
+    </nav>
+</header>
+
+<main>
+    <section id="featured">
+        <h2>Featured Songs</h2>
+        <div class="song" onclick="playSong('song1.mp3')">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.cFAovLl4Lp7b7boDSv2RNwHaEK&pid=Api&P=0&h=180" alt="Song 1 Cover">
+            <h3>Dil Diya Gallan</h3>
+            <p>Atif Aslam</p>
+        </div>
+        <div class="song" onclick="playSong('song2.mp3')">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.Vfoml79zpnKQtYRw2wIo0AHaEK&pid=Api&P=0&h=180" alt="Song 2 Cover">
+            <h3>Do Gallan</h3>
+            <p>Garry Sandhu and Rahul Sathu</p>
+        </div>
+        <div class="song" onclick="playSong('song3.mp3')">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.1wYLXGy4upEBiwltsEAlmQHaEK&pid=Api&P=0&h=180" alt="Song 3 Cover">
+            <h3>Song Title 3</h3>
+            <p>Aaman Trikha,Himesh Reshammiya,Vinit Singh</p>
+        </div>
+    </section>
+
+    <audio id="audioPlayer" controls style="display:none;"></audio>
+</main>
+
+<footer>
+    <p>&copy; 2024 Music Stream. All rights reserved.</p>
+</footer>
+
+<script src="home music.js"></script>
+</body>
+</html>
